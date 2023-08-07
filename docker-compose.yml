@@ -1,0 +1,13 @@
+version: '3'
+services:
+      node:
+        build:
+          context: .
+          dockerfile: ./node_docker/Dockerfile
+        volumes:
+          - ./node_docker/data/:/data
+        ports:
+          - "2223-2229:22"
+        deploy:
+          replicas: 2
+        
