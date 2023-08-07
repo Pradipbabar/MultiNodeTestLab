@@ -45,18 +45,19 @@ Follow these steps to set up and use the multi-node server testing environment:
     docker-compose up -d
 
 5. Acess individual Containers
-    `docker exec -it <conatiner name> bash`
+
+    `docker exec -it <conatiner name> bash` <br>
     `ssh -i <private key> -p <port-number> root@localhost`
 
 
-##Usage Scenarios
-###Software Testing:
+## Usage Scenarios
+### Software Testing:
  Use this setup to test software that interacts with multiple servers in a distributed environment. Validate your software's behavior in various network conditions.
 
-###Configuration Management Testing: 
+### Configuration Management Testing: 
 Similar to tools like Ansible, Chef, and Puppet, use this setup to validate your own configuration management scripts or tools.
 
-##Configuration
+## Configuration
 
 - The docker-compose.yml file defines the multi-node testing environment.
 - Each node is isolated in its own Docker container.
